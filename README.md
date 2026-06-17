@@ -6,6 +6,8 @@ Indoor golf performance facility concept built for golfers in the Garland / Rowl
 
 **Production site:** [launchlabstx.com](https://launchlabstx.com)
 
+**Portfolio case study (public GitHub):** [docs/CASE_STUDY.md](docs/CASE_STUDY.md)
+
 ---
 
 ## Project Overview
