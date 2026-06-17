@@ -2,7 +2,7 @@
 
 Indoor golf performance facility concept built for golfers in the Garland / Rowlett / Sachse / Firewheel area.
 
-**Live demo:** _Coming soon — connect Vercel after push_
+**Live demo:** _Add Vercel URL after deploy (see [Publish](#publish) below)_
 
 **Production site:** [launchlabstx.com](https://launchlabstx.com)
 
@@ -96,6 +96,25 @@ Open [http://localhost:3000](http://localhost:3000).
 npm run build   # production build
 npm run lint    # ESLint
 ```
+
+## Publish
+
+The site is committed locally on `main`. To push to GitHub:
+
+1. Create a **public** repo named `launch-labs-web` at [github.com/new](https://github.com/new) (no README, license, or `.gitignore`).
+2. Authenticate with GitHub (`gh auth login` or a [Personal Access Token](https://github.com/settings/tokens)).
+3. Set your remote if needed (replace `YOUR_USERNAME`):
+
+```bash
+git remote set-url origin https://github.com/YOUR_USERNAME/launch-labs-web.git
+git push -u origin main
+```
+
+### Deploy to Vercel (recommended)
+
+1. Import the GitHub repo at [vercel.com/new](https://vercel.com/new).
+2. Use the Next.js defaults (no env vars required).
+3. After deploy, add the `*.vercel.app` URL to the **Live demo** line at the top of this README.
 
 ## Notes
 
