@@ -8,6 +8,8 @@ Indoor golf performance facility concept built for golfers in the Garland / Rowl
 
 **Portfolio case study (public GitHub):** [docs/CASE_STUDY.md](docs/CASE_STUDY.md)
 
+**Deployment:** Vercel production deploys from the `website` branch. Public GitHub `main` is case-study-only and does not deploy.
+
 ---
 
 ## Project Overview
