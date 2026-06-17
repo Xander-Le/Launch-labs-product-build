@@ -101,12 +101,18 @@ npm run lint    # ESLint
 
 The site is committed locally on `main`. To push to GitHub:
 
-1. Create a **public** repo named `launch-labs-web` at [github.com/new](https://github.com/new) (no README, license, or `.gitignore`).
+1. Create a **public** repo named `launch-labs-product-build` at [github.com/new](https://github.com/new) (no README, license, or `.gitignore`).
 2. Authenticate with GitHub (`gh auth login` or a [Personal Access Token](https://github.com/settings/tokens)).
-3. Set your remote if needed (replace `YOUR_USERNAME`):
+3. Push from this repo (remote already points at `Xander-Le/launch-labs-product-build`):
 
 ```bash
-git remote set-url origin https://github.com/YOUR_USERNAME/launch-labs-web.git
+git push -u origin main
+```
+
+If you need to re-add the remote:
+
+```bash
+git remote set-url origin https://github.com/Xander-Le/launch-labs-product-build.git
 git push -u origin main
 ```
 
