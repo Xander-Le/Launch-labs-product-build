@@ -3,7 +3,7 @@ export type BillingCycle = "monthly" | "quarterly" | "annual";
 /** Update `claimed` when a new founder membership is sold. */
 export const founderMembershipSlots = {
   total: 25,
-  claimed: 7,
+  claimed: 14,
 } as const;
 
 export function getFounderSlotsRemaining() {
