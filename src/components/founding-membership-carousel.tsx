@@ -210,7 +210,7 @@ export function FoundingMembershipCarousel({
 
                   {!plan.disabled ? (
                     <Link
-                      href={siteConfig.bookingUrl}
+                      href={siteConfig.membershipsUrl}
                       data-event="cta_founder_membership"
                       className={`mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full px-5 py-3.5 text-sm font-semibold transition ${
                         plan.featured

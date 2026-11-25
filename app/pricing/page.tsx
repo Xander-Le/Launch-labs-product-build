@@ -105,7 +105,7 @@ export default function PricingPage() {
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
-                href={siteConfig.bookingUrl}
+                href={siteConfig.membershipsUrl}
                 data-event="cta_founder_membership"
                 className="inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-semibold text-[var(--background)] shadow-[0_0_30px_rgba(79,185,219,0.3)] transition hover:scale-[1.02] motion-reduce:hover:scale-100"
                 style={{ background: "var(--gradient-primary)" }}
@@ -360,7 +360,7 @@ export default function PricingPage() {
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
-                href={siteConfig.bookingUrl}
+                href={siteConfig.membershipsUrl}
                 data-event="cta_founder_membership"
                 className="inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-semibold text-[var(--background)] shadow-[0_0_30px_rgba(79,185,219,0.3)] transition hover:scale-[1.02] motion-reduce:hover:scale-100"
                 style={{ background: "var(--gradient-primary)" }}

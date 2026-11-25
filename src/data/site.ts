@@ -26,7 +26,9 @@ export const siteConfig = {
   hours: "Open 24/7 for members",
 
   bookingUrl:
-    "https://yourgolfbooking.com/venues/launch-labs-garland/memberships",
+    "https://booking.trackmangolf.com/venues/launch-labs-garland/booking",
+  membershipsUrl:
+    "https://booking.trackmangolf.com/venues/launch-labs-garland/memberships",
   defaultOgImage: "/opengraph-image",
 
   waiverCheckboxText:
