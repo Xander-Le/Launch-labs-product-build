@@ -254,8 +254,8 @@ export function FoundingMembershipCarousel({
 
         {variant === "home" && showFooterNote ? (
           <p className="mx-auto mt-10 max-w-2xl text-center text-sm leading-6 text-[#8A95A5]">
-            Founder pricing is limited to 25 spots before opening. Once they
-            are gone, these rates are gone.
+            Founder pricing is limited to 25 spots. Once they are gone, these
+            rates are gone.
           </p>
         ) : null}
       </div>

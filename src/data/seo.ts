@@ -34,5 +34,5 @@ export const seoIntros = {
   technology:
     "Every Launch Labs bay is powered by Trackman technology, giving you precise data on ball flight, club delivery, distance, spin, and shot shape.",
   leagues:
-    "The Grind League will bring Trackman-powered indoor golf competition to Garland after Launch Labs opens. Join the interest list for format, schedule, and registration updates.",
+    "The Grind League will bring Trackman-powered indoor golf competition to Garland. The studio is open now. Join the interest list for format, schedule, and registration updates.",
 } as const;

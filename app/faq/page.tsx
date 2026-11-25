@@ -85,13 +85,13 @@ const faqSections = [
       {
         question: "What is a Founding Membership?",
         answer:
-          "A Founding Membership is a limited-time promotion for early members before opening. It gives early supporters access to founder pricing and membership benefits while availability lasts.",
+          "A Founding Membership is a limited-time offer with founder pricing and membership benefits while spots last.",
       },
       {
         question:
-          "If I buy a Founding Membership before opening, when does billing start?",
+          "When does founding membership billing start?",
         answer:
-          "Your first payment secures your founder spot and is applied to your first month once Launch Labs opens. You will not be charged for unused months before the facility is available.",
+          "Your first payment starts your membership. Founder plans are billed monthly for the term you choose.",
       },
       {
         question: "Can non-members still book a bay?",

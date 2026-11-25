@@ -2,17 +2,18 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { siteConfig } from "@/src/data/site";
 
 export function HomeMobileCta() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-[#0A0E14]/95 p-4 backdrop-blur-xl md:hidden">
       <div className="mx-auto flex max-w-lg gap-3">
         <Link
-          href="#memberships"
-          data-event="cta_founder_membership"
+          href={siteConfig.bookingUrl}
+          data-event="cta_reserve_bay"
           className="inline-flex flex-1 items-center justify-center rounded-full bg-[linear-gradient(135deg,#4FB9DB_0%,#0E8DA8_100%)] px-4 py-3 text-sm font-semibold text-[#071018] shadow-[0_0_20px_rgba(79,185,219,0.3)]"
         >
-          Founder Memberships
+          Reserve Your Bay
         </Link>
 
         <Link

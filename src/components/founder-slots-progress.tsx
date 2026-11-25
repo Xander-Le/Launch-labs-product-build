@@ -38,7 +38,7 @@ export function FounderSlotsProgress({
         <p className="text-xs text-[var(--text-muted)]">
           {soldOut
             ? "Founder pricing is closed."
-            : `${claimed} claimed · limited before opening`}
+            : `${claimed} claimed · limited founder pricing`}
         </p>
       </div>
     );

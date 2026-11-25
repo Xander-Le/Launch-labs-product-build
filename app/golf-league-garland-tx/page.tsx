@@ -45,7 +45,7 @@ const statusItems = [
   },
   {
     label: "Registration",
-    value: "After opening",
+    value: "Coming later",
     icon: CalendarDays,
   },
   {
@@ -98,7 +98,7 @@ const futureLeagueSteps = [
   {
     title: "Register when seasons open",
     description:
-      "Once Launch Labs is open and league details are confirmed, interest list members will be invited to claim spots for the first season.",
+      "When league details are confirmed, interest list members will be invited to claim spots for the first season.",
     icon: Flag,
   },
   {
@@ -202,7 +202,7 @@ const faqs = [
     id: "registration-open",
     question: "Is league registration open yet?",
     answer:
-      "Not yet. The Grind League is coming soon. Join the interest list to receive updates when the first season format, schedule, and registration details are ready after Launch Labs opens.",
+      "Not yet. The studio is open, and The Grind League is still coming soon. Join the interest list for the first season format, schedule, and registration details.",
   },
   {
     id: "membership-required",
@@ -461,7 +461,7 @@ export default function GolfLeaguePage() {
           <SectionIntro
             eyebrow="How It Will Work"
             title="From interest list to league standings."
-            description="Registration is not open yet. This is the planned path from early interest to your first Grind League season once Launch Labs opens and final details are confirmed."
+            description="Registration is not open yet. This is the planned path from early interest to your first Grind League season once the format and schedule are confirmed."
           />
 
           <div className="mt-10 grid gap-5 lg:grid-cols-2">
@@ -594,7 +594,7 @@ export default function GolfLeaguePage() {
               <SectionIntro
                 eyebrow="Interest List"
                 title="Get early access to The Grind League."
-                description="Join the list now and we will reach out with format previews, registration timing, and season details as they are finalized after Launch Labs opens."
+                description="Join the list now and we will reach out with format previews, registration timing, and season details as they are finalized."
               />
 
               <div className="mt-8 space-y-4 text-sm leading-7 text-[var(--text-muted)]">

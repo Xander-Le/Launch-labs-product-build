@@ -119,7 +119,7 @@ export const serviceAreaPages = {
         id: "garland-membership",
         question: "Do Garland golfers need a membership to book?",
         answer:
-          "Founding memberships are the best fit for repeat practice. Public hourly booking will also be available after opening, depending on bay availability.",
+          "No. Founding memberships are the best fit for repeat practice, and public hourly booking is available when bays are open.",
       },
       {
         id: "garland-parking",
@@ -129,9 +129,9 @@ export const serviceAreaPages = {
       },
       {
         id: "garland-opening",
-        question: "Is the Garland studio open yet?",
+        question: "Is the Garland studio open?",
         answer:
-          "Launch Labs is opening soon in Garland. Founding memberships are available now, and full public booking will roll out after launch.",
+          "Yes. Launch Labs is open for business in Garland. Book a bay by the hour, or join a founding membership for recurring access.",
       },
     ],
   },
@@ -224,7 +224,7 @@ export const serviceAreaPages = {
         id: "indoor-hours",
         question: "Can I practice indoors late at night?",
         answer:
-          "Launch Labs is designed for 24/7 member access after opening. You reserve your bay and enter with your digital access instructions.",
+          "Yes. Members have 24/7 access, and public hourly time is available when bays are open. Reserve your bay and enter with your digital access instructions.",
       },
       {
         id: "indoor-technology",
@@ -236,7 +236,7 @@ export const serviceAreaPages = {
         id: "indoor-membership",
         question: "How do I compare membership and hourly indoor options?",
         answer:
-          "See the pricing page for founder memberships, guest access, and hourly booking details once public availability opens.",
+          "See the pricing page for founder memberships, guest access, and hourly booking.",
       },
     ],
   },
@@ -446,7 +446,7 @@ export const serviceAreaPages = {
         id: "rowlett-membership",
         question: "Should Rowlett golfers choose membership or hourly play?",
         answer:
-          "If you plan to practice regularly, compare founder memberships on the pricing page. Hourly booking will also be available after opening.",
+          "If you plan to practice regularly, compare founder memberships on the pricing page. Hourly booking is also available.",
       },
     ],
   },
@@ -539,7 +539,7 @@ export const serviceAreaPages = {
         id: "mesquite-membership",
         question: "Do Mesquite golfers need a membership?",
         answer:
-          "Not necessarily. Founding memberships are best for repeat practice, and hourly booking will also be available after opening.",
+          "Not necessarily. Founding memberships are best for repeat practice, and hourly booking is available when bays are open.",
       },
       {
         id: "mesquite-technology",

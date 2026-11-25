@@ -38,8 +38,8 @@ import { organizationSchema, websiteSchema } from "@/src/lib/schema";
 
 const trustItems = [
   {
-    title: "Opening soon",
-    description: "Garland, TX studio launching after build-out.",
+    title: "Now open",
+    description: "Open for business in Garland, TX.",
     icon: Sparkles,
   },
   {
@@ -49,7 +49,7 @@ const trustItems = [
   },
   {
     title: "24/7 member access",
-    description: "Self-service booking and digital entry after opening.",
+    description: "Self-service booking and digital entry, day or night.",
     icon: Clock,
   },
   {
@@ -63,7 +63,7 @@ const howItWorks = [
   {
     title: "Reserve Your Bay",
     description:
-      "Choose your time online and book a private Trackman session when booking opens.",
+      "Choose your date and time online and book a private Trackman session.",
     icon: CalendarCheck,
   },
   {
@@ -146,9 +146,9 @@ const audienceCards = [
 const homeFaqs = [
   {
     id: "opening",
-    question: "Is Launch Labs open yet?",
+    question: "Is Launch Labs open?",
     answer:
-      "Launch Labs is opening soon in Garland, TX. Founding memberships are available now to secure your spot before the studio opens. Public hourly booking and full bay access will roll out after opening.",
+      "Yes. Launch Labs is open for business in Garland, TX. Book a private bay by the hour, or join a founding membership for recurring 24/7 access.",
   },
   {
     id: "founder-pricing",
@@ -160,7 +160,7 @@ const homeFaqs = [
     id: "member-required",
     question: "Do I need a membership to use Launch Labs?",
     answer:
-      "Not necessarily. After opening, Launch Labs will support both founding memberships and public hourly booking based on availability. Founding memberships are the best fit for golfers who want recurring access and stronger monthly value.",
+      "No. You can book hourly bay time when availability allows, or join a founding membership for recurring access and stronger monthly value.",
   },
   {
     id: "technology",
@@ -170,9 +170,9 @@ const homeFaqs = [
   },
   {
     id: "access",
-    question: "How will I get into the facility?",
+    question: "How do I get into the facility?",
     answer:
-      "Launch Labs uses reservation-only digital access. After booking or activating membership, you will receive secure entry instructions tied to your session window.",
+      "Launch Labs uses reservation-only digital access. After you book or activate a membership, you receive secure entry instructions tied to your session window.",
   },
   {
     id: "location",
@@ -269,7 +269,7 @@ export default function Home() {
               <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                 <div className="inline-flex w-fit items-center gap-2.5 rounded-full border border-[var(--sky-blue)]/30 bg-[var(--sky-blue)]/10 px-4 py-2 text-sm font-semibold leading-none text-[var(--pale-aqua)] shadow-[0_0_24px_rgba(79,185,219,0.18)]">
                   <span className="h-2 w-2 shrink-0 rounded-full bg-[var(--sky-blue)] shadow-[0_0_10px_rgba(79,185,219,0.8)]" />
-                  Opening soon in Garland
+                  Open in Garland
                 </div>
 
                 <p className="inline-flex items-center gap-2 text-sm leading-none text-[var(--text-muted)]">
@@ -289,13 +289,20 @@ export default function Home() {
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                 <Link
-                  href="#memberships"
-                  data-event="cta_founder_membership"
+                  href={siteConfig.bookingUrl}
+                  data-event="cta_reserve_bay"
                   className="inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-semibold text-[var(--background)] shadow-[0_0_30px_rgba(79,185,219,0.3)] transition hover:scale-[1.02] motion-reduce:hover:scale-100"
                   style={{ background: "var(--gradient-primary)" }}
                 >
-                  See Founder Memberships
+                  {siteConfig.primaryCta}
                   <ArrowRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  href="#memberships"
+                  data-event="cta_founder_membership"
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.03] px-7 py-4 text-base font-semibold text-white transition hover:border-[var(--sky-blue)]/50 hover:bg-[var(--sky-blue)]/10"
+                >
+                  See Founder Memberships
                 </Link>
               </div>
             </div>
@@ -310,7 +317,7 @@ export default function Home() {
                   "Trackman-powered private simulator bays",
                   "Self-service booking and digital entry",
                   "Founder pricing with $0 initiation",
-                  "Opening soon at 565 W Oates Rd, Garland",
+                  "Open now at 565 W Oates Rd, Garland",
                 ].map((item) => (
                   <div
                     key={item}
@@ -361,7 +368,7 @@ export default function Home() {
           <SectionIntro
             eyebrow="How It Works"
             title="Book. Enter. Train."
-            description="A simple self-service flow designed for private Trackman sessions — ready when Launch Labs opens in Garland."
+            description="A simple self-service flow for private Trackman sessions in Garland."
           />
 
           <div className="relative mt-12">
@@ -487,8 +494,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl border-t border-white/10 pt-14">
           <SectionIntro
             eyebrow="Founder Memberships"
-            title="Lock in founder pricing before opening."
-            description="Player Founder and VIP Founder plans include $0 initiation, monthly billing on every term, and 24/7 access after Launch Labs opens. Compare full details on the pricing page."
+            title="Lock in founder pricing while spots last."
+            description="Player Founder and VIP Founder plans include $0 initiation, monthly billing on every term, and 24/7 access. Compare full details on the pricing page."
           />
 
           <div className="mt-10">
@@ -518,9 +525,9 @@ export default function Home() {
         <div className="mx-auto max-w-7xl border-t border-white/10 pt-14">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
             <SectionIntro
-              eyebrow="Public Access Preview"
-              title="Hourly booking after opening."
-              description="Launch Labs will support public bay reservations in addition to memberships once the studio is live. Until then, founding memberships are the best way to secure access before launch."
+              eyebrow="Hourly Booking"
+              title="Book a bay without a membership."
+              description="Reserve private Trackman time by the hour when availability allows. Same private bay. Same Trackman data. No membership required."
             />
 
             <div className="grid gap-4">
@@ -536,14 +543,19 @@ export default function Home() {
                 </div>
               ))}
 
-              <p className="rounded-2xl border border-white/10 bg-[var(--background)]/50 px-4 py-4 text-sm leading-7 text-[var(--text-muted)]">
-                Public hourly booking is not live yet. Join a founder membership
-                now or check back after opening for non-member reservations.
-              </p>
             </div>
           </div>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <Link
+              href={siteConfig.bookingUrl}
+              data-event="cta_reserve_bay"
+              className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-[var(--background)] shadow-[0_0_24px_rgba(79,185,219,0.22)] transition hover:scale-[1.02] motion-reduce:hover:scale-100"
+              style={{ background: "var(--gradient-primary)" }}
+            >
+              Book Hourly Sessions
+              <ArrowRight className="h-4 w-4" />
+            </Link>
             <Link
               href={pageCtas.memberships.href}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-semibold text-white transition hover:border-[var(--sky-blue)]/50 hover:bg-[var(--sky-blue)]/10"
@@ -583,8 +595,8 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
             <div>
               <SectionIntro
-                eyebrow="Location & Opening"
-                title="Opening soon in Garland, TX."
+                eyebrow="Location"
+                title="Open in Garland, TX."
                 description="Launch Labs is built for golfers across east DFW who want a clean, private place to practice without the bar scene."
               />
 
@@ -637,10 +649,10 @@ export default function Home() {
                   <div className="rounded-xl border border-white/10 bg-[var(--background)]/50 p-4">
                     <Sparkles className="mb-3 h-5 w-5 text-[var(--sky-blue)]" />
                     <p className="text-sm font-semibold text-white">
-                      Opening soon
+                      Open for business
                     </p>
                     <p className="mt-1 text-sm text-[var(--text-muted)]">
-                      Founder memberships available before launch.
+                      Book a bay or join a founding membership.
                     </p>
                   </div>
 
@@ -677,7 +689,7 @@ export default function Home() {
 
               <ul className="mt-6 space-y-3 text-sm leading-7 text-[var(--text-body)]">
                 <li>Trackman-verified league scoring in private bays</li>
-                <li>Weekly competitive structure after studio opening</li>
+                <li>Weekly competitive structure once the season starts</li>
                 <li>Built for serious golfers — not bar-style leagues</li>
                 <li>Interest list open now; registration coming later</li>
               </ul>
@@ -699,8 +711,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl border-t border-white/10 pt-14">
           <FaqAccordion
             eyebrow="FAQ"
-            title="Common questions before opening"
-            description="Quick answers about Launch Labs, founder memberships, and what to expect when the Garland studio opens."
+            title="Common questions"
+            description="Quick answers about Launch Labs, booking, and founder memberships."
             faqs={homeFaqs}
           />
 
@@ -722,27 +734,34 @@ export default function Home() {
           <div className="rounded-[2rem] border border-white/10 bg-[var(--surface)]/70 px-6 py-10 md:px-10 md:py-12">
             <div className="max-w-3xl">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--sky-blue)]">
-                Opening Soon in Garland
+                Open in Garland
               </p>
               <h2 className="mt-3 font-[var(--font-outfit)] text-4xl font-semibold tracking-[-0.03em] text-white md:text-5xl">
-                Secure your spot before Launch Labs opens.
+                Book a bay or lock in founder pricing.
               </h2>
               <p className="mt-4 text-base leading-7 text-[var(--text-body)]">
-                Founding memberships are available now with $0 initiation and
-                monthly billing on every term. Be ready for private Trackman
-                access at {siteConfig.address.street}, {siteConfig.address.city},{" "}
-                {siteConfig.address.state}.
+                Launch Labs is open for private Trackman sessions at{" "}
+                {siteConfig.address.street}, {siteConfig.address.city},{" "}
+                {siteConfig.address.state}. Reserve hourly time, or join a
+                founding membership with $0 initiation while spots last.
               </p>
             </div>
 
             <div className="mt-8 flex flex-col gap-4 lg:flex-row lg:flex-wrap lg:items-center">
               <Link
-                href="#memberships"
+                href={siteConfig.bookingUrl}
+                data-event="cta_reserve_bay"
                 className="inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-semibold text-[var(--background)] shadow-[0_0_30px_rgba(79,185,219,0.3)] transition hover:scale-[1.02] motion-reduce:hover:scale-100"
                 style={{ background: "var(--gradient-primary)" }}
               >
-                See Founder Memberships
+                {siteConfig.primaryCta}
                 <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link
+                href="#memberships"
+                className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.03] px-7 py-4 text-base font-semibold text-white transition hover:border-[var(--sky-blue)]/50 hover:bg-[var(--sky-blue)]/10"
+              >
+                See Founder Memberships
               </Link>
 
               <Link

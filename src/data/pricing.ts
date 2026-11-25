@@ -114,9 +114,9 @@ export const pricingFaqs = [
   },
   {
     id: "pre-opening",
-    question: "If I join before opening, when does billing apply?",
+    question: "When does founder membership billing start?",
     answer:
-      "Your first founder payment secures your spot and is applied to your first eligible membership period after Launch Labs opens. You are not charged for unused months before the facility is available.",
+      "Your first founder payment starts your membership. Founder plans are billed monthly for the term you choose.",
   },
   {
     id: "cancel",
@@ -173,7 +173,7 @@ export const membershipIncludes = [
 export const billingNotes = [
   "Monthly, quarterly, and annual founder terms are all billed monthly.",
   "Quarterly and annual pricing reflects the membership term, not a single upfront payment.",
-  "Founder pricing is limited and available before opening.",
+  "Founder pricing is limited while founder spots remain.",
   "Membership benefits, guest limits, and included hours vary by plan.",
   "Peak hours differ on weekends and may limit Starter memberships to non-peak reservation windows only.",
   "Cancellation requests should be sent before your next billing date when possible.",
